@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>捡垃圾之4U服务器 - Geekfeng&#039;s blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Geekfeng&#039;s blog"><meta name="msapplication-TileImage" content="/img/blog.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Geekfeng&#039;s blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="折腾前提我之前折腾的蜗牛星际（换了b365 + i3 9100 + 16G）越来越难以满足我的需求，没办法随心所欲的分配内存&amp;#x2F;CPU给虚机，就又开始物色合适的机器。这次我再也不想折腾ITX机型了，拓展性和散热简直折磨人，而且自打我从杭州的15平小房间搬到成都2居室后，再也不担心放不放得下的问题了！ 刚开始相中了Dell的塔式服务器T630，找了很大一圈都是4000-5000左右价位的准系统，很离谱"><meta property="og:type" content="blog"><meta property="og:title" content="捡垃圾之4U服务器"><meta property="og:url" content="http://example.com/2022/01/20/%E6%8D%A1%E5%9E%83%E5%9C%BE%E4%B9%8B4U%E6%9C%8D%E5%8A%A1%E5%99%A8/"><meta property="og:site_name" content="Geekfeng&#039;s blog"><meta property="og:description" content="折腾前提我之前折腾的蜗牛星际（换了b365 + i3 9100 + 16G）越来越难以满足我的需求，没办法随心所欲的分配内存&amp;#x2F;CPU给虚机，就又开始物色合适的机器。这次我再也不想折腾ITX机型了，拓展性和散热简直折磨人，而且自打我从杭州的15平小房间搬到成都2居室后，再也不担心放不放得下的问题了！ 刚开始相中了Dell的塔式服务器T630，找了很大一圈都是4000-5000左右价位的准系统，很离谱"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/4U24%E6%9C%BA%E7%AE%B1.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/s465%20compare%20woniu.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/x10drl-ln4.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/power.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/LSI9211-8I.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/lsi-92118i_2.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/IPMI_Login.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/JBT1.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/CMOS%20Clear.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/IPMI_PW.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/Flash_IT_Model.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/PCIE_Layout.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/diskbackboard.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/diskbackboard3.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/diskbackboard2.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/UID.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/EMAIL.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/RE_EMAIL.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/hot_plugin_fan.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/4PIN2.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/IPMI_dashboard.png"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/cprs_power.png"><meta property="article:published_time" content="2022-01-20T06:46:32.000Z"><meta property="article:modified_time" content="2022-01-26T09:39:18.824Z"><meta property="article:author" content="Geek Feng"><meta property="article:tag" content="硬件"><meta property="article:tag" content="服务器"><meta property="article:tag" content="X86"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://cdn.jsdelivr.net/gh/bluehr/images/img/4U24%E6%9C%BA%E7%AE%B1.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/01/20/%E6%8D%A1%E5%9E%83%E5%9C%BE%E4%B9%8B4U%E6%9C%8D%E5%8A%A1%E5%99%A8/"},"headline":"Geekfeng's blog","image":["https://cdn.jsdelivr.net/gh/bluehr/images/img/4U24%E6%9C%BA%E7%AE%B1.png","https://cdn.jsdelivr.net/gh/bluehr/images/img/s465%20compare%20woniu.png","https://cdn.jsdelivr.net/gh/bluehr/images/img/x10drl-ln4.png","https://cdn.jsdelivr.net/gh/bluehr/images/img/power.png","https://cdn.jsdelivr.net/gh/bluehr/images/img/LSI9211-8I.png","https://cdn.jsdelivr.net/gh/bluehr/images/img/lsi-92118i_2.png","https://cdn.jsdelivr.net/gh/bluehr/images/img/IPMI_Login.png","https://cdn.jsdelivr.net/gh/bluehr/images/img/JBT1.png","https://cdn.jsdelivr.net/gh/bluehr/images/img/CMOS%20Clear.png","https://cdn.jsdelivr.net/gh/bluehr/images/img/IPMI_PW.png","https://cdn.jsdelivr.net/gh/bluehr/images/img/Flash_IT_Model.png","https://cdn.jsdelivr.net/gh/bluehr/images/img/PCIE_Layout.png","https://cdn.jsdelivr.net/gh/bluehr/images/img/diskbackboard.png","https://cdn.jsdelivr.net/gh/bluehr/images/img/diskbackboard3.png","https://cdn.jsdelivr.net/gh/bluehr/images/img/diskbackboard2.png","https://cdn.jsdelivr.net/gh/bluehr/images/img/UID.png","https://cdn.jsdelivr.net/gh/bluehr/images/img/EMAIL.png","https://cdn.jsdelivr.net/gh/bluehr/images/img/RE_EMAIL.png","https://cdn.jsdelivr.net/gh/bluehr/images/img/hot_plugin_fan.png","https://cdn.jsdelivr.net/gh/bluehr/images/img/4PIN2.png","https://cdn.jsdelivr.net/gh/bluehr/images/img/IPMI_dashboard.png","https://cdn.jsdelivr.net/gh/bluehr/images/img/cprs_power.png"],"datePublished":"2022-01-20T06:46:32.000Z","dateModified":"2022-01-26T09:39:18.824Z","author":{"@type":"Person","name":"Geek Feng"},"description":"折腾前提我之前折腾的蜗牛星际（换了b365 + i3 9100 + 16G）越来越难以满足我的需求，没办法随心所欲的分配内存&#x2F;CPU给虚机，就又开始物色合适的机器。这次我再也不想折腾ITX机型了，拓展性和散热简直折磨人，而且自打我从杭州的15平小房间搬到成都2居室后，再也不担心放不放得下的问题了！ 刚开始相中了Dell的塔式服务器T630，找了很大一圈都是4000-5000左右价位的准系统，很离谱"}</script><link rel="canonical" href="http://example.com/2022/01/20/%E6%8D%A1%E5%9E%83%E5%9C%BE%E4%B9%8B4U%E6%9C%8D%E5%8A%A1%E5%99%A8/"><link rel="icon" href="/img/blog.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/blog.svg" alt="Geekfeng&#039;s blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2022-01-20T06:46:32.000Z" title="2022/1/20 14:46:32">2022-01-20</time>发表</span><span class="level-item"><time dateTime="2022-01-26T09:39:18.824Z" title="2022/1/26 17:39:18">2022-01-26</time>更新</span><span class="level-item">13 分钟读完 (大约1956个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">捡垃圾之4U服务器</h1><div class="content"><h3 id="折腾前提"><a href="#折腾前提" class="headerlink" title="折腾前提"></a>折腾前提</h3><p>我之前折腾的蜗牛星际（换了b365 + i3 9100 + 16G）越来越难以满足我的需求，没办法随心所欲的分配内存/CPU给虚机，就又开始物色合适的机器。这次我再也不想折腾ITX机型了，拓展性和散热简直折磨人，而且自打我从杭州的15平小房间搬到成都2居室后，再也不担心放不放得下的问题了！</p>
+<p>刚开始相中了Dell的塔式服务器T630，找了很大一圈都是4000-5000左右价位的准系统，很离谱，我记得B站Up主无情开评2K+入手的，果断放弃。</p>
+<p>又在V站看到了有人配浪潮SA5212M4 2U服务器，真的很便宜，准系统就800块，简直香得一匹，但是考虑到2U没有接触过，噪音问题不好把控，先放置一边。</p>
+<p>闲逛的时候看到有人推荐了拓普龙S465-24这类24盘位4U机箱，很满意，拓展性拉满。但是全新机箱1700+ 有点劝退，本垃圾佬秉承着勤俭持家的原则，当然是去海鲜市场逛逛，最终发现了一套价值大概在3500左右但是只卖2600的整机，马上拿下。<br>配置单如下表</p>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>型号</th>
+<th align="left">二手行情价</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>机箱</td>
+<td>拓普龙S465-24</td>
+<td align="left">600-800</td>
+</tr>
+<tr>
+<td>主板</td>
+<td>超微X10DRL-LN4</td>
+<td align="left">1400</td>
+</tr>
+<tr>
+<td>CPU</td>
+<td>2680 V4</td>
+<td align="left">500</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>32G海力士 REG ECC X2</td>
+<td align="left">1000</td>
+</tr>
+<tr>
+<td>硬盘</td>
+<td>128G 三星 + 佳翼SK15转接卡</td>
+<td align="left">130</td>
+</tr>
+<tr>
+<td>阵列卡</td>
+<td>LSI 9211-8i</td>
+<td align="left">100</td>
+</tr>
+<tr>
+<td>电源</td>
+<td>长城CRPS550 550W x2 热拔插冗余电源</td>
+<td align="left">150</td>
+</tr>
+</tbody></table>
+<h3 id="到货开箱"><a href="#到货开箱" class="headerlink" title="到货开箱"></a>到货开箱</h3><p>​    <img src="https://cdn.jsdelivr.net/gh/bluehr/images/img/4U24%E6%9C%BA%E7%AE%B1.png" alt="开箱"></p>
+<span id="more"></span>
+
+<ul>
+<li><p>机箱：4U的机箱确实有点大，看着这24盘位就很满足！哈哈，再跟我的蜗牛C对比。<br><img src="https://cdn.jsdelivr.net/gh/bluehr/images/img/s465%20compare%20woniu.png" alt="对比蜗牛星际"></p>
+</li>
+<li><p>主板<br><img src="https://cdn.jsdelivr.net/gh/bluehr/images/img/x10drl-ln4.png" alt="超微X10DRL-LN4"></p>
+</li>
+<li><p>电源<br><img src="https://cdn.jsdelivr.net/gh/bluehr/images/img/power.png" alt="长城CRPS550"></p>
+</li>
+<li><p>阵列卡</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bluehr/images/img/LSI9211-8I.png" alt="LSI9211-8I"><br><img src="https://cdn.jsdelivr.net/gh/bluehr/images/img/lsi-92118i_2.png" alt="LSI9211-8I"></p>
+</li>
+</ul>
+<h3 id="插电开机"><a href="#插电开机" class="headerlink" title="插电开机"></a>插电开机</h3><p>开机的时候才想起来，这类服务器主板基本都是只有VGA接口，家里已经没有VGA的显示器了-_-<br>不过还好有IPMI可以远程管理，到爱快里找到IPMI的IP, 登录<br>结果完犊子，用默认密码进不去！！<br><img src="https://cdn.jsdelivr.net/gh/bluehr/images/img/IPMI_Login.png" alt="IPMI_Login"><br>我以为是密码被之前的用户修改了，马上找了官方指导手册，短接JBT1重置BIOS（这个JBT1有意思，不是常规的两根针脚，而是两个焊点）<br><img src="https://cdn.jsdelivr.net/gh/bluehr/images/img/JBT1.png" alt="JBT1"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/bluehr/images/img/CMOS%20Clear.png" alt="CMOS Clear"></p>
+<p>重置完后发现密码还是不对，后来在主板标签上找到了密码，这是什么操作，超微家的设计都这么秀吗</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bluehr/images/img/IPMI_PW.png" alt="主板标签"></p>
+<p>用标签上的密码终于进去了，IMPI可以远程装系统，改BIOS设置，真的很方便。</p>
+<p>目前来说开机声音确实起飞，后面再讲静音化改造。</p>
+<h4 id="背板刷直通模式"><a href="#背板刷直通模式" class="headerlink" title="背板刷直通模式"></a>背板刷直通模式</h4><p>参考别人的教程直接刷就行了</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bluehr/images/img/Flash_IT_Model.png" alt="Flash_IT_Model"></p>
+<h4 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h4><p>CPU AIDA64 烤机2小时温度也没过60C°（我把机箱风扇都拔了，太吵了），内存测试也没问题，就是卖家原来插的硬盘转接卡插到了PCIE2.0*4的槽位上了<br>这个板子就是PCI-E插槽太少了，不过对于我这种从ITX机箱换过来的用户还是有一种很富余的假象。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bluehr/images/img/PCIE_Layout.png" alt="PCIE_Layout"></p>
+<h5 id="硬盘背板"><a href="#硬盘背板" class="headerlink" title="硬盘背板"></a>硬盘背板</h5><p>测试24个硬盘位的时候就遇到大问题了<br>首先我这个LSI 9211阵列卡的2个SAS口只能连接8个硬盘<br>主板上还有2个SAS口连接8个硬盘<br>最大一次性只能识别16个位置，所以在测试期间，我需要把连接背板的口子换一下才能全部测试。</p>
+<p><strong>这个24盘位硬盘背板的，其本质也是2个一模一样的12盘位背板组合而成</strong></p>
+<p>测试中发现上面一些个硬盘位能识别出来，但是指示灯始终是红色，我刚开始以为是背板的问题，于是乎把背板干下来<br><img src="https://cdn.jsdelivr.net/gh/bluehr/images/img/diskbackboard.png" alt="硬盘背板"><br>，下方的硬盘背板多链接4根不同的线，有主板USB，机箱跳线，还有两根屏幕排线一样的东西。<br>我就把背板调换了一下，发现还是一样的问题。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bluehr/images/img/diskbackboard3.png" alt="硬盘背板连接"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/bluehr/images/img/diskbackboard2.png" alt="硬盘背板连接"></p>
+<p>后来才意识到应该是主板的SAS接口连接的硬盘都会有这个现象，跟背板本身并没有关系，截止目前我也仍然不清楚为啥主板的SAS接口会有这个问题，<del>感觉这个主板也没有集成了SAS阵列卡功能，只能后续再看看有没有办法了（希望有大佬能教教我是不是我BIOS设置有问题） 。</del><br><em>01/26 后续更新：原来是主板那两根SAS线有问题，换了线就好了😅,为了排除是我设置或者连线的问题,我还去骚扰了下机箱厂商客服,哈哈</em></p>
+<h5 id="机箱"><a href="#机箱" class="headerlink" title="机箱"></a>机箱</h5><p>机箱右边还有一个UID接口怎么都不亮，看了下是跳线没有连接，但是主板的跳线是单针的，机箱又是2针的不知道怎么搞了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bluehr/images/img/UID.png" alt="机箱跳线"></p>
+<p>听说超微的技术支持都很给力，马上邮件问问，得到的答复是不支持第三方机箱。。心塞<br><img src="https://cdn.jsdelivr.net/gh/bluehr/images/img/EMAIL.png" alt="邮件求助"><br><img src="https://cdn.jsdelivr.net/gh/bluehr/images/img/RE_EMAIL.png" alt="邮件求助"></p>
+<h3 id="静音改造"><a href="#静音改造" class="headerlink" title="静音改造"></a>静音改造</h3><p>机箱上自带的热拔插风扇结构很简单，就是一个12038风扇加一个壳子，把风扇的4Pin接口（下图中红色框中的）卡在壳子上面，</p>
+<p><img src="https://cdn.jsdelivr.net/gh/bluehr/images/img/hot_plugin_fan.png" alt="两个4Pin对比"><br>我找了下自己的库存发现了一个Arctic F12风扇，但是这个扇子的4Pin接口（下图中黑色的接口)没有办法卡住，<br><img src="https://cdn.jsdelivr.net/gh/bluehr/images/img/4PIN2.png" alt="两个4Pin对比"></p>
+<p>淘宝找了一圈，也没发现这种接口的风扇，只能作罢，将就吧，打不了不用热拔插呗，还是静音比较重要。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>第一次接触到服务器主板，发现服务器主板带有的IPMI确实很好用，很强大，效果如下</p>
+<ul>
+<li>传感器监控：<br><img src="https://cdn.jsdelivr.net/gh/bluehr/images/img/IPMI_dashboard.png" alt="IPMI Dashboard"></li>
+<li>冗余电源监控，还能看到电压电流温度，补充一下这个电源还挺静音的。<br><img src="https://cdn.jsdelivr.net/gh/bluehr/images/img/cprs_power.png" alt="电源监控"></li>
+<li>还能直接远程控制操作系统 录屏，跟采集卡的效果差不多</li>
+</ul>
+<p><del>目前除了主板的硬盘接口有点小问题没解决外</del>，这次捡漏应该算是成功的，先装个ESXI，日后慢慢加满硬盘。</p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>捡垃圾之4U服务器</p><p><a href="http://example.com/2022/01/20/捡垃圾之4U服务器/">http://example.com/2022/01/20/捡垃圾之4U服务器/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>Geek Feng</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2022-01-20</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2022-01-26</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E7%A1%AC%E4%BB%B6/">硬件</a><a class="link-muted mr-2" rel="tag" href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a><a class="link-muted mr-2" rel="tag" href="/tags/X86/">X86</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2023/07/05/Intel%20X540%20%E7%BD%91%E5%8D%A1%E5%9B%BA%E4%BB%B6%E5%8D%87%E7%BA%A7/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">Intel X540 网卡固件升级</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/07/01/iKuai%E5%A4%9A%E6%8B%A8-%E6%88%90%E9%83%BD%E8%81%94%E9%80%9A%E5%A4%9A%E6%8B%A8%E6%95%99%E7%A8%8B/"><span class="level-item">ikuai多拨-成都联通多拨教程</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div id="comment-container"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.css"><script src="https://cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.min.js"></script><script>var gitalk = new Gitalk({
+            id: "52ed09ef0541bb1befe5698adeca3a33",
+            repo: "bluehr.github.io",
+            owner: "bluehr",
+            clientID: "5e08e4bcd85e666f079d",
+            clientSecret: "bb48d23c7eeace4db742b2bfd70a44d758c26c03",
+            admin: ["bluehr"],
+            createIssueManually: false,
+            distractionFreeMode: false,
+            perPage: 20,
+            pagerDirection: "last",
+            proxy: "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token",
+            
+            enableHotKey: true,
+            language: "zh-CN",
+        })
+        gitalk.render('comment-container')</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#折腾前提"><span class="level-left"><span class="level-item">1</span><span class="level-item">折腾前提</span></span></a></li><li><a class="level is-mobile" href="#到货开箱"><span class="level-left"><span class="level-item">2</span><span class="level-item">到货开箱</span></span></a></li><li><a class="level is-mobile" href="#插电开机"><span class="level-left"><span class="level-item">3</span><span class="level-item">插电开机</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#背板刷直通模式"><span class="level-left"><span class="level-item">3.1</span><span class="level-item">背板刷直通模式</span></span></a></li><li><a class="level is-mobile" href="#测试"><span class="level-left"><span class="level-item">3.2</span><span class="level-item">测试</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#硬盘背板"><span class="level-left"><span class="level-item">3.2.1</span><span class="level-item">硬盘背板</span></span></a></li><li><a class="level is-mobile" href="#机箱"><span class="level-left"><span class="level-item">3.2.2</span><span class="level-item">机箱</span></span></a></li></ul></li></ul></li><li><a class="level is-mobile" href="#静音改造"><span class="level-left"><span class="level-item">4</span><span class="level-item">静音改造</span></span></a></li><li><a class="level is-mobile" href="#总结"><span class="level-left"><span class="level-item">5</span><span class="level-item">总结</span></span></a></li></ul></div></div><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-07-05T06:46:32.000Z">2023-07-05</time></p><p class="title"><a href="/2023/07/05/Intel%20X540%20%E7%BD%91%E5%8D%A1%E5%9B%BA%E4%BB%B6%E5%8D%87%E7%BA%A7/">Intel X540 网卡固件升级</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-01-20T06:46:32.000Z">2022-01-20</time></p><p class="title"><a href="/2022/01/20/%E6%8D%A1%E5%9E%83%E5%9C%BE%E4%B9%8B4U%E6%9C%8D%E5%8A%A1%E5%99%A8/">捡垃圾之4U服务器</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-07-01T08:20:44.000Z">2021-07-01</time></p><p class="title"><a href="/2021/07/01/iKuai%E5%A4%9A%E6%8B%A8-%E6%88%90%E9%83%BD%E8%81%94%E9%80%9A%E5%A4%9A%E6%8B%A8%E6%95%99%E7%A8%8B/">ikuai多拨-成都联通多拨教程</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-04-28T06:46:32.000Z">2021-04-28</time></p><p class="title"><a href="/2021/04/28/OpenWrt%E5%AE%89%E8%A3%85Adguard-home%E4%B8%94%E6%98%BE%E7%A4%BA%E5%AE%A2%E6%88%B7%E7%AB%AFIP/">OpenWrt安装Adguard home且显示客户端IP</a></p></div></article></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/blog.svg" alt="Geekfeng&#039;s blog" height="28"></a><p class="is-size-7"><span>&copy; 2023 Geek Feng</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
